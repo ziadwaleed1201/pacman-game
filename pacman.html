@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pac-Man Maze Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <div class="ui">
+      <div class="panel">
+        <h3>Pac-Man Designer</h3>
+
+        <label>Size: <span id="sizeValue">20</span> px</label>
+        <input id="sizeSlider" type="range" min="10" max="40" value="20">
+
+        <label>Mouth Angle: <span id="angleValue">40</span>°</label>
+        <input id="angleSlider" type="range" min="10" max="70" value="40">
+
+        <label>Color:</label>
+        <input id="colorPicker" type="color" value="#ffff00">
+
+        <label>Difficulty / Level:</label>
+        <select id="difficulty">
+          <option value="1">Level 1 - Easy</option>
+          <option value="2" selected>Level 2 - Medium</option>
+          <option value="3">Level 3 - Hard</option>
+        </select>
+
+        <div class="two">
+          <button id="previewBtn">Preview</button>
+          
+        </div>
+        <button id="backFromPreview" style="display:none">Back to Maze</button>
+      </div>
+
+      <div class="panel">
+        <h3>Game Controls</h3>
+        <div class="two">
+          <button id="startBtn">Start Game</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <p>Score: <span id="score">0</span></p>
+        <p>Time Left: <span id="timer">60</span>s</p>
+        <p id="status"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+:root {
+  --neon: #00f0ff;
+}
+
+body {
+  background: #000;
+  color: var(--neon);
+  font-family: Inter, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+}
+
+.wrap {
+  display: flex;
+  gap: 16px;
+}
+
+canvas {
+  background: #070819;
+  border: 2px solid var(--neon);
+  box-shadow: 0 0 18px var(--neon);
+  image-rendering: pixelated;
+}
+
+.ui {
+  width: 340px;
+}
+
+.panel {
+  background: rgba(5, 5, 10, 0.85);
+  border: 1px solid var(--neon);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin: 6px 0 3px;
+  font-size: 13px;
+}
+
+input[type=range],
+select,
+input[type=color] {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid var(--neon);
+  background: transparent;
+  color: var(--neon);
+  cursor: pointer;
+}
+
+.two {
+  display: flex;
+  gap: 8px;
+}
+
+.two button {
+  flex: 1;
+}
+
+#status {
+  color: #ffb400;
+  font-weight: 700;
+  margin-top: 6px;
+}
